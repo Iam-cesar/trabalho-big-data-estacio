@@ -44,6 +44,17 @@ export const demos: { name: string; items: Item[] }[] = [
         slug: 'produtos',
         description: 'Grafico representando a situação dos produtos',
       },
+      
     ],
   },
+  {
+    name: 'Sobre os integrantes',
+    items: [
+      {
+        name: 'Membros',
+        slug: 'membros',
+        description: 'Informação sobre os integrantes do grupo.',
+      },
+    ],
+  }
 ];

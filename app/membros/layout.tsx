@@ -1,6 +1,6 @@
 import React from 'react';
 
-const title = 'Produtos';
+const title = 'Membros';
 
 export const metadata = {
   title,

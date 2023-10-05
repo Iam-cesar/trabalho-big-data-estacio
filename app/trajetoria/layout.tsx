@@ -1,6 +1,6 @@
 import React from 'react';
 
-const title = 'Nested Layouts';
+const title = 'Trajetoria';
 
 export const metadata = {
   title,
