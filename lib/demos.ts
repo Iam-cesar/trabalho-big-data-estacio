@@ -44,7 +44,6 @@ export const demos: { name: string; items: Item[] }[] = [
         slug: 'produtos',
         description: 'Grafico representando a situação dos produtos',
       },
-      
     ],
   },
   {
@@ -56,5 +55,5 @@ export const demos: { name: string; items: Item[] }[] = [
         description: 'Informação sobre os integrantes do grupo.',
       },
     ],
-  }
+  },
 ];
