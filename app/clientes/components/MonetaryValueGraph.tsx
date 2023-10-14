@@ -57,7 +57,7 @@ const MonetaryValueGraph = () => {
       {
         label: 'MonetaryValue',
         data: monetaryValue,
-        backgroundColor: 'rgba(255, 99, 132)',
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
   };

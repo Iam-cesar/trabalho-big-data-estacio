@@ -57,7 +57,7 @@ const FGraph = () => {
       {
         label: 'F',
         data: F,
-        backgroundColor: 'rgba(255, 99, 132)',
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
   };

@@ -57,7 +57,7 @@ const MGraph = () => {
       {
         label: 'M',
         data: M,
-        backgroundColor: 'rgba(255, 99, 132)',
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
   };
