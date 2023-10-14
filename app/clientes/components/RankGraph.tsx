@@ -37,6 +37,7 @@ const rank = clients.map((client) => client.rank);
 const RankGraph = () => {
   const options = {
     responsive: true,
+
     plugins: {
       legend: {
         position: 'top' as const,

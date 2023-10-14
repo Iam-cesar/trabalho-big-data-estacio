@@ -1,4 +1,4 @@
-import graph from '#/lib/clients.graph';
+import { graph } from '#/lib/clientss.graph';
 import {
   ArcElement,
   BarElement,
@@ -29,6 +29,11 @@ ChartJS.register(
   LineController,
 );
 
+const clients = graph.sort((a, b) => a.Recency - b.Recency).slice(0, 25);
+
+const cnpj = clients.map((client) => client.CNPJ);
+const recency = clients.map((client) => client.Recency);
+
 const RecencyGraph = () => {
   const options = {
     responsive: true,
@@ -44,11 +49,11 @@ const RecencyGraph = () => {
   };
 
   const data = {
-    labels: graph.CNPJ,
+    labels: cnpj,
     datasets: [
       {
         label: 'Recency',
-        data: graph.Recency,
+        data: recency,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],

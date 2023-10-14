@@ -1,4 +1,4 @@
-import graph from '#/lib/clients.graph';
+import { graph } from '#/lib/clientss.graph';
 import {
   ArcElement,
   BarElement,
@@ -29,6 +29,14 @@ ChartJS.register(
   LineController,
 );
 
+const clients = graph
+  .sort((a, b) => a.MonetaryValue - b.MonetaryValue)
+  .reverse()
+  .slice(0, 25);
+
+const cnpj = clients.map((client) => client.CNPJ);
+const monetaryValue = clients.map((client) => client.MonetaryValue);
+
 const MonetaryValueGraph = () => {
   const options = {
     responsive: true,
@@ -44,11 +52,11 @@ const MonetaryValueGraph = () => {
   };
 
   const data = {
-    labels: graph.CNPJ,
+    labels: cnpj,
     datasets: [
       {
         label: 'MonetaryValue',
-        data: graph.MonetaryValue,
+        data: monetaryValue,
         backgroundColor: 'rgba(255, 99, 132)',
       },
     ],

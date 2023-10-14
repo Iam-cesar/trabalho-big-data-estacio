@@ -1,4 +1,4 @@
-import graph from '#/lib/clients.graph';
+import { graph } from '#/lib/clientss.graph';
 import {
   ArcElement,
   BarElement,
@@ -29,6 +29,14 @@ ChartJS.register(
   LineController,
 );
 
+const clients = graph
+  .sort((a, b) => a.Frequency - b.Frequency)
+  .reverse()
+  .slice(0, 25);
+
+const cnpj = clients.map((client) => client.CNPJ);
+const frequency = clients.map((client) => client.Frequency);
+
 const FrequencyGraph = () => {
   const options = {
     responsive: true,
@@ -44,11 +52,11 @@ const FrequencyGraph = () => {
   };
 
   const data = {
-    labels: graph.CNPJ,
+    labels: cnpj,
     datasets: [
       {
         label: 'Frequency',
-        data: graph.Frequency,
+        data: frequency,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
