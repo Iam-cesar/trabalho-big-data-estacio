@@ -1,3 +1,4 @@
+import PyGraph from './PyGraph';
 import BarClientGraph from './BarClientGraph';
 import FGraph from './FGraph';
 import FrequencyGraph from './FrequencyGraph';
@@ -11,7 +12,10 @@ import RGraph from './RGraph';
 const Graphs = () => {
   return (
     <>
-      <BarClientGraph />
+      <PyGraph path='/graphs/graph.html' />
+      <PyGraph path='/graphs/treemap_after.html' />
+      <PyGraph path='/graphs/treemap_before.html' />
+      {/* <BarClientGraph />
       <RankGraph />
       <RecencyGraph />
       <FrequencyGraph />
@@ -19,7 +23,7 @@ const Graphs = () => {
       <RGraph />
       <FGraph />
       <MGraph />
-      <RFMSegmentConcatGraph />
+      <RFMSegmentConcatGraph /> */}
     </>
   );
 };
