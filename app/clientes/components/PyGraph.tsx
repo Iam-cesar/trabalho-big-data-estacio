@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from 'react';
 
 type PyGraphProps = {
   path?: string;
-}
+};
 
 const PyGraph = ({ path = '/graphs/graph.html' }: PyGraphProps) => {
   const [htmlContent, setHtmlContent] = useState('');
@@ -12,11 +12,12 @@ const PyGraph = ({ path = '/graphs/graph.html' }: PyGraphProps) => {
       const response = await fetch(path);
       const fetchedHtmlContent = await response.text();
       const scriptElements = Array.from(
-        new DOMParser().parseFromString(fetchedHtmlContent, 'text/html').scripts
+        new DOMParser().parseFromString(fetchedHtmlContent, 'text/html')
+          .scripts,
       );
-      scriptElements.forEach(script => {
+      scriptElements.forEach((script) => {
         const newScript = document.createElement('script');
-        Array.from(script.attributes).forEach(attr => {
+        Array.from(script.attributes).forEach((attr) => {
           newScript.setAttribute(attr.name, attr.value);
         });
         newScript.appendChild(document.createTextNode(script.innerHTML));
