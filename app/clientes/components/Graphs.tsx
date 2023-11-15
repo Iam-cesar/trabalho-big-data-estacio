@@ -3,9 +3,9 @@ import PyGraph from './PyGraph';
 const Graphs = () => {
   return (
     <>
-      <PyGraph path="/graphs/graph.html" />
-      <PyGraph path="/graphs/treemap_before.html" />
-      <PyGraph path="/graphs/treemap_after.html" />
+      <PyGraph path="/graphs/sankey_RFM_before_after.html" />
+      <PyGraph path="/graphs/treemap_rfm_before.html" />
+      <PyGraph path="/graphs/treemap_rfm_after.html" />
     </>
   );
 };

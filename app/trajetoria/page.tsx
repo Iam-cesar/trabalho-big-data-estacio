@@ -1,5 +1,5 @@
-import images from "#/public/images";
-import Image from "next/image";
+import images from '#/public/images';
+import Image from 'next/image';
 
 export default function Page() {
   return (
@@ -7,9 +7,12 @@ export default function Page() {
       <h1 className="text-xl font-bold">The road so far</h1>
 
       <article>
-        <p>Aqui os amigo definem qual a melhor estrategia para abordar o problema apresentado na aula</p>
+        <p>
+          Aqui os amigo definem qual a melhor estrategia para abordar o problema
+          apresentado na aula
+        </p>
         <Image
-          src={images.class_room_up}
+          src={images.peopleImages.class_room_up}
           alt="class room watched from top"
           width={1280}
           height={1}
@@ -17,9 +20,12 @@ export default function Page() {
       </article>
 
       <article>
-        <p>Aqui os amigo definem qual a melhor estrategia para abordar o problema apresentado na aula</p>
+        <p>
+          Aqui os amigo definem qual a melhor estrategia para abordar o problema
+          apresentado na aula
+        </p>
         <Image
-          src={images.computer_two_persons}
+          src={images.peopleImages.computer_two_persons}
           alt="cumputer with two persons"
           width={1280}
           height={1}
@@ -27,9 +33,12 @@ export default function Page() {
       </article>
 
       <article>
-        <p>Aqui os amigo definem qual a melhor estrategia para abordar o problema apresentado na aula</p>
+        <p>
+          Aqui os amigo definem qual a melhor estrategia para abordar o problema
+          apresentado na aula
+        </p>
         <Image
-          src={images.computer_focus}
+          src={images.peopleImages.computer_focus}
           alt="cumputer with focus"
           width={1280}
           height={1}
@@ -37,9 +46,12 @@ export default function Page() {
       </article>
 
       <article>
-        <p>Aqui os amigo definem qual a melhor estrategia para abordar o problema apresentado na aula</p>
+        <p>
+          Aqui os amigo definem qual a melhor estrategia para abordar o problema
+          apresentado na aula
+        </p>
         <Image
-          src={images.man_coding}
+          src={images.peopleImages.man_coding}
           alt="a man coding in a black screen"
           width={1280}
           height={1}
@@ -47,9 +59,12 @@ export default function Page() {
       </article>
 
       <article>
-        <p>Aqui os amigo definem qual a melhor estrategia para abordar o problema apresentado na aula</p>
+        <p>
+          Aqui os amigo definem qual a melhor estrategia para abordar o problema
+          apresentado na aula
+        </p>
         <Image
-          src={images.teacher}
+          src={images.peopleImages.teacher}
           alt="the teacher"
           width={1280}
           height={1}
@@ -57,16 +72,17 @@ export default function Page() {
       </article>
 
       <article>
-        <p>Aqui os amigo definem qual a melhor estrategia para abordar o problema apresentado na aula</p>
+        <p>
+          Aqui os amigo definem qual a melhor estrategia para abordar o problema
+          apresentado na aula
+        </p>
         <Image
-          src={images.two_persons_front}
+          src={images.peopleImages.two_persons_front}
           alt="two persons front viewed "
           width={1280}
           height={1}
         />
       </article>
-
-
     </div>
   );
 }
